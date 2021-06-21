@@ -1,0 +1,17 @@
+version: '2.2'
+services:
+  mutant:
+    build: .
+    image: mutant:latest
+    container_name: service
+    ports:
+      - "8080:8080"
+      - "8003:8003"
+    environment:
+      - CATALINA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8003
+      - dynamodb.host=http://dynamo:8000
+  dynamo:
+    image: amazon/dynamodb-local
+    container_name: dynamo
+    ports:
+      - "8000:8000"
