@@ -16,7 +16,7 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)
-@SpringBootTest(classes = {MutantServiceImpl.class, DNAProcessorService.class})
+@SpringBootTest(classes = {MutantServiceImpl.class, DNAProcessor.class})
 class MutantServiceImplTest {
 
     @Autowired

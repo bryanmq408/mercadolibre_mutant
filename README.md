@@ -42,6 +42,12 @@ Esto se da cuando la posición del elemento es mayor o igual a la longitud de la
 
    <img src="/images/matrix-hole.PNG"/>
 
+## Arquitectura del proyecto
+
+El proyecto fue desarrollado bajo una arquitectura hexagonal con DDD y Spring. Para mas información ingrese [aquí](https://www.baeldung.com/hexagonal-architecture-ddd-spring).
+
+   <img src="/images/hexagonal.PNG"/>
+
 ## Desplegando la aplicación en ambiente local
 
 Antes de desplegar la aplicación en nuestro ambiente local, debemos contar con los siguientes prerrequisitos:

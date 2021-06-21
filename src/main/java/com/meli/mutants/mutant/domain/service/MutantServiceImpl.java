@@ -20,10 +20,10 @@ public class MutantServiceImpl implements MutantService{
     private static final String PATTERN_DNA = "^[A|T|C|G]*$";
 
     private final MutantRepository repository;
-    private final DNAProcessorService processor;
+    private final DNAProcessor processor;
 
     @Autowired
-    public MutantServiceImpl(MutantRepository repository, DNAProcessorService processor) {
+    public MutantServiceImpl(MutantRepository repository, DNAProcessor processor) {
         this.repository = repository;
         this.processor = processor;
     }

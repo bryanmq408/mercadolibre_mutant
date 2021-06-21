@@ -13,6 +13,13 @@ import java.util.Collections;
 
 @Configuration
 public class SpringFoxConfig {
+
+    private static final String TITLE = "Mutant Rest API";
+    private static final String DESCRIPTION = "Api designed to identify if a DNA sequence is mutant";
+    private static final String VERSION = "Beta 0.0.1";
+    private static final String AUTHOR = "Brayan Alberto Morales Quintero";
+    private static final String EMAIL = "Brayan Alberto Morales Quintero";
+
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -25,11 +32,11 @@ public class SpringFoxConfig {
 
     private ApiInfo getApiDetails() {
         return new ApiInfo(
-                "Mutant Rest API",
-                "Api designed to identify if a DNA sequence is mutant",
-                "Beta 0.0.1",
+                TITLE,
+                DESCRIPTION,
+                VERSION,
                 "",
-                new Contact("Brayan Alberto Morales Quintero", "", "bryanmq408@gmail.com"),
+                new Contact(AUTHOR, "", EMAIL),
                 "",
                 "",
                 Collections.emptyList());
